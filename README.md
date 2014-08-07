@@ -1,2 +1,1 @@
-Web-based-To-Do-List-Application
-================================
+During my busy weeks full of various homework assignments, quizzes, exams, projects, meetings, work, etc, things can become a little overwhelming at times. The primary reason I created this simple web-based application was because I grew continuously frustrated forgetting to do tasks and wanted somewhere I could look, regardless of where I was, to view everything I needed to get done in a given week without having to write it down and hopefully not lose it or forget about it. The beauty of this application is it is web-based and tasks can be added, edited, or marked completed and removed from the list using any device with Internet.
