@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Edit Task</title>
+        <style>
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+            }
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+        </style>
+    </head/>
+    <center>
+    <body style="background-color:FCF0AD;">
+        <p style="padding-top:20px; padding-bottom:10px; font-size:80px;">Edit Task</p>
+        <form action="/todo/edit/{{no}}" method="get">
+                <input type="text" name="task" value="{{old[0]}}" size="" maxlength="75" style="font-size:30px; height:50px;">
+                <input type="text" name="date" value="{{old[1]}}" size="5" maxlength="5" style="font-size:30px; height:50px;">
+                &nbsp;
+                <select name="status" style="padding-top:3px; font-size:25px; width:155px; height:50px;">
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" name="save" value="Save" style="font-size:20px; width:80px; height:40px;">
+                &nbsp;
+                <input type="button" name="cancel" value="Cancel" onClick="history.go(-1);return true;" style="font-size:20px; width:80px; height:40px;">
+            </form>
+    </body>
+    </center>
+</html>
